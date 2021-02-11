@@ -7,7 +7,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
 
 
 async function tvShow(input) {
-    url = "http://api.tvmaze.com/search/shows?q=" + input;
+    url = "https://api.tvmaze.com/search/shows?q=" + input;
     let request = await fetch(url);
 
     let response = await request.json();
