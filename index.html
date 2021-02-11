@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        .form-control{
+            display: inline-block;
+        }
+        img{
+             
+            display: flex;
+  justify-content: center;
+                    
+        }
+        .searchBox{
+            width: 91%;
+            height: 100%;
+        }
+        nav{
+            background-color: #212121;
+        }
+          body{
+              background-color: #343434;
+              color: white;
+
+          }
+          
+          .card{
+            border-color: #212121;            background-color:#343434;
+
+          }
+        @media screen and (max-width: 992px) {
+                     .searchBox{
+                         width: 100%;
+
+                     }
+
+                     .searchBtn{
+                         margin-top: 3%;
+                          width: 100%;
+                      }  
+                    
+
+}
+    </style>
+    <title>TV Maze</title>
+    <link rel="icon" href="icon.png">
+</head>
+<body>
+    <nav>
+        <div class="container mt-2 text-center">
+           
+            <div class="row ">
+                
+                    <div class="col-lg-2 pt-2 brand">
+                      <h2>
+                          TV Maze
+
+                      </h2>  
+                    </div>
+                    <div class="col-lg-10 pt-2">
+                        <form>
+
+                            <input type="search" class="form-control pt-1 searchBox">
+                            <button class="btn btn-warning searchBtn" type="submit">Search</button>
+
+                        </form>
+                       
+
+                    </div>
+                    
+              
+                
+            </div>
+               
+            
+        </div>
+    </nav>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      
+    <script src="script.js"></script>
+</body>
+</html>
