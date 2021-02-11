@@ -79,7 +79,7 @@ async function tvShow(input) {
      
         //DETAILS
         var details = document.createElement('div');
-        details.setAttribute('class', 'col-md-8 px-3 pt-5');
+        details.setAttribute('class', 'col-md-8 px-3 pt-lg-5');
         row.append(details);
         //CARD BLOCK
         var cardBlock = document.createElement('div');
