@@ -133,7 +133,8 @@ async function tvShow(input) {
         //BTN
         var knowMore = document.createElement('button');
         knowMore.setAttribute('href', response[i].show.url)
-        knowMore.setAttribute('class', 'btn btn-primary mb-2 mt-1');
+        knowMore.setAttribute('class', 'btn  mb-2 mt-1');
+        knowMore.setAttribute('style','background-color:#61892f')
         knowMore.innerHTML = "Know More"
         cardBlock.append(knowMore)
    
