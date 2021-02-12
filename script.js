@@ -1,3 +1,55 @@
+
+
+
+var nav = document.createElement('nav');
+document.body.append(nav);
+
+//CONTAINER
+var navContainer= document.createElement('div');
+navContainer.setAttribute('class','container  text-center')
+nav.append(navContainer);
+
+//NAV-ROW
+var navRow = document.createElement('div');
+navRow.setAttribute('class','row');
+navContainer.append(navRow);
+
+//BRAND
+
+var brand = document.createElement('div');
+brand.setAttribute('class','col-lg-2 pt-1 brand');
+brand.innerHTML="<h2>TV Maze</h2>";
+navRow.append(brand);
+
+//SEARCHBAR
+
+var searchBar = document.createElement('div');
+searchBar.setAttribute('class','col-lg-10 pt-2');
+navRow.append(searchBar);
+
+//form
+
+var form = document.createElement('form');
+searchBar.append(form);
+
+//INPUT 
+
+var input = document.createElement('input');
+input.setAttribute('type','search');
+input.setAttribute('class','form-control pt-1 searchBox');
+form.append(input);
+
+
+//BUTTON 
+
+var navButton = document.createElement('button');
+navButton.setAttribute('class','btn searchBtn ml-lg-2 pb-1');
+navButton.setAttribute('type','submit');
+navButton.setAttribute('style','background-color: #86C232;');
+navButton.innerHTML="Search";
+form.append(navButton)
+
+
 document.querySelector("form").addEventListener("submit", function (e) {
     e.preventDefault();
     input = document.querySelector("input").value;
@@ -132,7 +184,8 @@ async function tvShow(input) {
 
         //BTN
         var knowMore = document.createElement('a');
-        knowMore.setAttribute('href', response[i].show.url)
+        knowMore.setAttribute('href',response[i].show.url)
+        console.log(response[i].show.url)
         knowMore.setAttribute('class', 'btn  mb-2 mt-1');
         knowMore.setAttribute('style','background-color:#61892f')
         knowMore.innerHTML = "Know More"
