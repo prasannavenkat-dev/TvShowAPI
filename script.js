@@ -131,7 +131,7 @@ async function tvShow(input) {
 
 
         //BTN
-        var knowMore = document.createElement('button');
+        var knowMore = document.createElement('a');
         knowMore.setAttribute('href', response[i].show.url)
         knowMore.setAttribute('class', 'btn  mb-2 mt-1');
         knowMore.setAttribute('style','background-color:#61892f')
